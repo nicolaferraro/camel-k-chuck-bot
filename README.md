@@ -35,7 +35,7 @@ If the result of the previous command is `Ready`, you're ready to go.
 You can run the integration with the following command:
 
 ```
-kamel run Routes.java -p token=<the-authorization-token-of-the-bot> --dev
+kamel run Routes.java -p token=<the-authorization-token-of-the-bot> -d camel-hystrix --dev
 ```
 
 By using the `--dev` flag, you'll see the output of the pod printed in the console and the integration
