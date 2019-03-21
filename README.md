@@ -1,0 +1,1 @@
+# camel-k-demo-codemotion
