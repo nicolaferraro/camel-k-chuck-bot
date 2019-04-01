@@ -8,6 +8,13 @@
     <artifactId>camel-k-demo-java</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+
+    <!--
+
+     NOTE: This pom.xml file is here only to help the IDE configuring autocompletion correctly.
+
+     -->
+
     <build>
         <sourceDirectory>.</sourceDirectory>
     </build>
