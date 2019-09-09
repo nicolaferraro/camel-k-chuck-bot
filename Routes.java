@@ -26,7 +26,7 @@ public class Routes extends RouteBuilder {
                 // Let's use a circuit breaker to avoid cascading failures
                 .hystrix().hystrixConfiguration().executionTimeoutInMilliseconds(1000).end()
                     // When a user writes the word 'chuck' on the chat execute the following steps
-                    .to("http4://api.icndb.com/jokes/random?exclude=[explicit]")
+                    .to("http://api.icndb.com/jokes/random?exclude=[explicit]")
                     // Here we have a random quote by Chuck Norris, let's unmarshal the JSON data
                     .unmarshal().json(JsonLibrary.Jackson)
                     // We take a specific field of the JSON data
